@@ -1,0 +1,230 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    background-image: url("../images/pattern-background-desktop.svg");
+}
+
+section {
+    margin: 0 auto;
+    width: 28%;
+    /* padding: 10px; */
+    height: 35em;
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+section h1 {
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+section p {
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 0, 10px, 0, 10%;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: 15% 40% 45%;
+    background-color: rgb(248, 249, 254);
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item p {
+    padding: 0;
+    margin-left: 8px;
+}
+
+.item h4 {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    margin-left: 8px;
+    font-weight: 700;
+    color: var(--Dark-blue);
+}
+
+.icon img {
+    position: absolute;
+    left: 39%;
+    height: 45px;
+    width: 45px;
+    margin-top: 5px;
+    margin-right: 0;
+}
+
+.link {
+    margin-top: 13px;
+    text-align: right;
+}
+
+.link a:hover{
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+    color:var(--Dark-blue);
+}
+
+.botao {
+    display: grid;
+    grid-template-rows: 45px 45px;
+}
+
+.botao button { 
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn1 {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 33px;
+    background-color: var(--Bright-blue);
+    color: rgb(255, 255, 255);
+    height: 7vh;
+}
+
+.btn2 {
+    
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 40px;
+    background-color: transparent;
+    height: 6vh;
+    color: var(--Desaturated-blue);
+}
+
+.btn1:hover {
+    background: #2b89d1;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+.btn2:hover {
+    color:var(--Dark-blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(max-width:1024px) {
+    section {
+        margin: 0 auto;
+        width: 35%;
+        height: 34em;
+        background-color: rgb(255, 255, 255);
+        margin-top: 50px;
+        border-radius: 5%;
+        overflow: hidden;
+    }
+
+    .icon img {
+        position: absolute;
+        left: 36%;
+        height: 45px;
+        width: 45px;
+        margin-top: 5px;
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    section {
+        margin: 0 auto;
+        width: 50%;
+        height: 34em;
+        background-color: rgb(255, 255, 255);
+        margin-top: 50px;
+        border-radius: 5%;
+        overflow: hidden;
+    }
+
+    .icon img {
+        position: absolute;
+        left: 31%;
+        height: 45px;
+        width: 45px;
+        margin-top: 5px;
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 375px) {
+    body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        background-image: url("../images/pattern-background-mobile.svg");
+    }
+
+    section {
+        margin: 0 auto;
+        width: 89%;
+        height: 34em;
+        background-color: rgb(255, 255, 255);
+        margin-top: 50px;
+        border-radius: 5%;
+        overflow: hidden;
+    }
+
+    .icon img {
+        position: absolute;
+        left: 15%;
+        height: 45px;
+        width: 45px;
+        margin-top: 5px;
+        margin-right: 0;
+    }
+
+    .link {
+        margin-top: 13px;
+        text-align: right;
+        margin-right: 10px;
+    }
+}
