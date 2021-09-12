@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click here](https://github.com/MuriloBarreto/Order-summary-card)
-- Live Site URL: [Click here](https://your-live-site-url.com)
+- Live Site URL: [Click here](https://order-summary-card-rho.vercel.app/)
 
 ## My process
 
