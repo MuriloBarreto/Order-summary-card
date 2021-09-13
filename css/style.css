@@ -14,15 +14,17 @@ body {
     font: inherit;
     vertical-align: baseline;
     background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
 }
 
 section {
     margin: 0 auto;
-    width: 28%;
+    width: 25%;
     /* padding: 10px; */
-    height: 35em;
+    height: 36em;
     background-color: rgb(255, 255, 255);
-    margin-top: 50px;
+    margin-top: 250px;
     border-radius: 5%;
     overflow: hidden;
 }
@@ -68,9 +70,10 @@ section p {
     margin-left: 8px;
 }
 
-.item h4 {
+.item h2 {
     font-family: 'Red Hat Display', sans-serif;
     text-align: center;
+    font-size: 16px;
     margin-top: 5px;
     margin-bottom: 1px;
     margin-left: 8px;
@@ -115,7 +118,7 @@ section p {
     margin-top: 33px;
     background-color: var(--Bright-blue);
     color: rgb(255, 255, 255);
-    height: 7vh;
+    height: 4vh;
 }
 
 .btn2 {
@@ -150,11 +153,40 @@ section p {
     color: hsl(228, 45%, 44%);
 }
 
+@media(max-width:1390px) {
+    section {
+        margin: 0 auto;
+        width: 28%;
+        height: 35em;
+        background-color: rgb(255, 255, 255);
+        margin-top: 50px;
+        border-radius: 5%;
+        overflow: hidden;
+    }
+
+    .icon img {
+        position: absolute;
+        left: 39%;
+        height: 45px;
+        width: 45px;
+        margin-top: 5px;
+        margin-right: 0;
+    }
+    .btn1 {
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 33px;
+        background-color: var(--Bright-blue);
+        color: rgb(255, 255, 255);
+        height: 7vh;
+    }
+}
+
 @media(max-width:1024px) {
     section {
         margin: 0 auto;
         width: 35%;
-        height: 34em;
+        height: 35em;
         background-color: rgb(255, 255, 255);
         margin-top: 50px;
         border-radius: 5%;
@@ -169,15 +201,23 @@ section p {
         margin-top: 5px;
         margin-right: 0;
     }
+    .btn1 {
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 33px;
+        background-color: var(--Bright-blue);
+        color: rgb(255, 255, 255);
+        height: 6vh;
+    }
 }
 
 @media(max-width: 768px) {
     section {
         margin: 0 auto;
-        width: 50%;
+        width: 45%;
         height: 34em;
         background-color: rgb(255, 255, 255);
-        margin-top: 50px;
+        margin-top: 12px;
         border-radius: 5%;
         overflow: hidden;
     }
@@ -189,6 +229,14 @@ section p {
         width: 45px;
         margin-top: 5px;
         margin-right: 0;
+    }
+    .btn1 {
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 33px;
+        background-color: var(--Bright-blue);
+        color: rgb(255, 255, 255);
+        height: 8vh;
     }
 }
 
@@ -226,5 +274,13 @@ section p {
         margin-top: 13px;
         text-align: right;
         margin-right: 10px;
+    }
+    .btn1 {
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 33px;
+        background-color: var(--Bright-blue);
+        color: rgb(255, 255, 255);
+        height: 4vh;
     }
 }
